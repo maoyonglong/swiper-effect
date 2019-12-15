@@ -116,7 +116,6 @@ var SwiperEffect = (function () {
           _cache.forEach(function (c) {
             var slideDirection = c['slide'+direction]
             var $slide = _$slides.eq(index)
-            if (slideDirection)
             if (slideDirection) _effects[slideDirection.effect].apply(_effects, [$slide.find(_effClass)].concat(slideDirection.params))
           })
         }
