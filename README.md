@@ -21,7 +21,6 @@ dataset支持的语法是`<effect>:<args1>,<args2>,...` ，表示触发动画时
 字符串 -> `asd`, 或加上单引号`'asd'`，默认只会去掉第一层的单引号，比如，`'132'd'`就是字符串`123'd ` 
 数字 -> `123456`  
 对象 -> `duration=1000;delay=500`会被转成`{duration: 1000, delay: 5000}`   
-在
 ```js
 <div class="swiper-slide">
 <p class="eff" data-eff-in="velocity:slideDown,duration=1000;delay=500" data-eff-out="velocity:slideUp,duration=1000;delay=500">内容</p>
